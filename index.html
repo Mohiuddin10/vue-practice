@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+    <div id="app">
+        {{greeting}}
+        <p>{{ isWorking }}</p>
+        <h2>{{title}} - {{age}}</h2>
+        <button v-on:click="age++">Increase</button>
+        <button v-on:click="age--">Decrease</button>
+        <button @click="changeTitle">Title Change</button>
+    </div>
+
+
+
+
+    <script src="app.js">
+     
+    </script>
+</body>
+</html>
