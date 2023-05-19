@@ -9,12 +9,17 @@
 </head>
 <body>
     <div id="app">
-        {{greeting}}
+        <!-- {{greeting}}
         <p>{{ isWorking }}</p>
         <h2>{{title}} - {{age}}</h2>
         <button v-on:click="age++">Increase</button>
         <button v-on:click="age--">Decrease</button>
         <button @click="changeTitle">Title Change</button>
+        <h1 v-if="isWorking == true">Condition</h1> -->
+
+        <h1 v-if="isWorking == true">This is True</h1>
+        <h1 v-else>This is False</h1>
+        <button v-on:click="toggleWorking">{{isWorking ? isWorking : 'Hide'}}</button>
     </div>
 
 
